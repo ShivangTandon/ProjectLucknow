@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modeofTransport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <header>
+        <img src="LMC_Logo.jpg" alt="Logo"> 
+        <h1 style="color: #f8f8f8;">Janaab Muskuraiye Aap Lucknow mein hain!!</h1>
+        <p>Lucknow - The City of Nawabs</p>
+     </header>
+     <!-- Hero Section with Carousel -->
+ 
+
+     <nav>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="places.html" >Places of Interest</a></li>
+            <li><a href="modeofTransport.html" >Modes of Transport</a></li>
+        </ul>
+     </nav>
+     <div id="home" class="carousel">
+        <div class="carousel-inner">
+          <img src="Bada_Imambada(Outer_view).jpg" alt="Lucknow Image 1">
+          <img src="chotaImambada.jpg" alt="Lucknow Image 2">
+          <img src="roomidarwaza.jpg" alt="Lucknow Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+     </div>
+        <div>
+            <ul>
+                <li>
+                    <img src="roomidarwaza.jpg" alt="roomidarwaza">
+                    <span>Rumi Darwaza</span>
+                </li>
+                <li>
+                    <img src="Bada_Imambada(Outer_view).jpg" alt="Bada Imambada">
+                    <span>Bara Imambada</span>
+                </li>
+                <li>
+                    <img src="chotaImambada.jpg" alt="Chota Imambada">
+                    <span>Chota Imambada</span>
+                </li>
+                <li>
+                    <img src="janeshwar Mishra Park.jpg" alt="Janeshwar Mishra Park">
+                    <span>Janeshwar Mishra Park</span>
+                </li>
+                <li>
+                    <img src="Old_Lucknow.jpg" alt="Old Lucknow">
+                    <span>Old Lucknow</span>
+                </li>
+                <li>
+                    <img src="Charbagh_LKO.jpg" alt="Charbagh Lucknow">
+                    <span>Charbagh Lucknow</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="form-container">
+            <h2>Travel Distance & Price Calculator</h2>
+         <div>
+             <form id="travelForm">
+                 <label for="startingPoint">Starting Point:</label>
+                 <select id="startingPoint" required>
+                    <option value="" disabled selected>Select starting point</option>
+                    <option value="Airport">Airport</option>
+                    <option value="Railway Station">Railway Station</option>
+                 </select>
+    
+                 <label for="destination">Select Destination:</label>
+                 <select id="destination" required>
+                    <option value="" disabled selected>Select a tourist place</option>
+                    <option value="Rumi Darwaza">Rumi Darwaza</option>
+                    <option value="Bada Imambada">Bada Imambada</option>
+                    <option value="Chota Imambada">Chota Imambada</option>
+                    <option value="Janeshwar Mishra Park">Janeshwar Mishra Park</option>
+                    <option value="Old Lucknow">Old Lucknow</option>
+                    <option value="Charbagh Lucknow">Charbagh Lucknow</option>
+                    
+                </select>
+    
+                <button class="button1" onclick="calculateTravel()">Calculate</button>
+              </form>
+                         
+             <div class="result" id="result"></div>
+            </div>
+        </div>
+</body>
+</html>
